@@ -1,0 +1,378 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+.img {
+    background-image: url(./assets/Hacker2.jpeg);
+    height: 700px;
+     position: relative; 
+    background-position: center;
+    background-size: cover;
+     background-attachment: fixed; 
+     filter: brightness(40%);
+
+} 
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(218, 218, 218);
+    font-size: 24px; 
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Rubik Vinyl', cursive;
+}
+
+
+.bgrred {
+    background-color: aquamarine;
+    height: 1000px;
+
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.icon {
+    float: left;
+}
+.ul-nav {
+    list-style: none;
+    text-align: right;
+    font-style: none;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik Vinyl', cursive;
+position: sticky;
+top: 0;
+}
+h2 {
+    font-size: 1em;
+}
+.li {
+    padding: 15px 25px;
+    font-size:1.2em;
+    display: inline-block;
+   position: sticky;
+   list-style: none;
+   text-decoration: none;
+}
+.li:hover {
+    border-radius: 15px;
+    background-color:rgb(63, 55, 173);
+    transition: .3s ease-in-out;
+    transition-delay: .4s;
+    transform: rotate(360deg);
+}
+.link-none {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+.mobile {
+    display: none;
+}
+.icon.mobile {
+    background-color: rgb(8, 117, 150);
+    color: white;
+}
+
+@media only screen and (max-width:600px) {
+    html {
+        font-size: 0.9em;  
+        
+    }
+    .navbar {
+        top: 0;
+        position: sticky;
+        list-style: none;
+        text-decoration: none;
+    }
+    .ul-nav {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+    }
+    .li {
+        margin: 10px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+    }
+     .mobile {
+        display:none;
+        position: sticky;
+    } 
+    .dekstop {
+        display:none;
+        position: sticky;
+    } 
+}
+     
+
+    @keyframes bergerak {
+        from {
+            transform: translateX(70px);
+         } 
+        to {
+            transform: translateX(-35px);
+        }
+    }
+.imgprib {
+    background-image: url(./assets/turun\ tangga\ new.jpeg);
+    background-position: center;
+    background-size: auto;
+    margin: 10px auto;
+    height: 180px;
+     max-width: 150px;
+     border-radius: 50%;
+     background-repeat: no-repeat;
+     animation: bergerak 15s 1;
+     
+}
+.p-tengah {
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 19.2px;
+    margin: 1.2em 420px;
+    
+}
+
+.ul-desk {
+    list-style: none;
+    font-size: 19.2px;
+    font-family: 'Cinzel Decorative', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik Vinyl', cursive;
+    display: flex;
+    margin: 2.2em 1.0em;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.deskripsi {
+    text-align: left;
+    text-transform: capitalize;
+    margin: 1.8em 1.0em;
+    font-size: 19.2px;
+    margin-right: 200px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.deskripsi2 {
+    text-align: left;
+    text-transform: capitalize;
+    margin: 1.8em 1.0em;
+    font-size: 19.2px;
+    margin-left: 200px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 0.9em;  
+    }
+    .ul-desk {
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        font-size: 19.2px;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 1.8em 1.0em;
+    }
+    .li-desk {
+        margin: 10px 0;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        font-size: 19.2px;
+        margin: 1.8em 1.0em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .p-tengah {
+        margin: 1.8em 2em;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 19.2px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.h3-akt {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}  
+.img-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.image2 {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 30px 30px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 0px black;
+    transition: .1s;
+}
+.image {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin: 30px 50px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 0px black;
+    transition: .1s;
+   
+}
+.image:hover {
+    box-shadow: 5px 10px 1px black;
+    transform: translateY(-10px);
+    transition-duration: .1s;
+}
+@media (max-width:600px) {
+    .image {
+        width: 200px;
+        height: 200px;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+}
+.h3-cont {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+.div-top {
+    margin: 10px 35px;
+}
+#name {
+    width: 500px;
+}
+
+@media (max-width: 600px) {
+    form#contact-form {
+      width: 90%;
+    }
+  }
+ 
+ hr {
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+       max-width: 300px;
+       
+    }
+    @media only screen and (min-width: 600px) {
+        hr {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        hr {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+ 
+
+.btn-kirim {
+    width: 500px;
+     margin: 1em 0; 
+    border: none;
+    background-color: teal;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 0; 
+     display: inline-block; 
+    text-align: center;
+    margin-left: 388px;
+}
+@media only screen and (min-width: 600px) {
+    .form-contact-us {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+   
+}
+
+.inputan > label {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+    .inputan {
+        width: 85%;
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+    }
+    .form-contact-us, .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+    .inputan > input, .inputan > textarea {
+        width: 100%;
+        margin: 0.5em 0;
+        font-size: 1em;
+    }
+    input[type="text" i] {
+        padding: 1px 2px;
+    }
+    input[type="email" i] {
+        padding: 1px 2px;
+    }
+    .btn-kirim {
+        width: 85%;
+        margin: 1em 0;
+        border: none;
+        background-color: teal;
+        color: white;
+        font-size: 1em;
+        padding: 0.5em 0;
+    }
+    .btn-kirim:hover {
+        background-color: #025555;
+        transform: translateY(-8px);
+        
+        border-radius: 5px;
+    } 
+
+footer {
+    background-color:black;
+    color: #fff;
+   padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
